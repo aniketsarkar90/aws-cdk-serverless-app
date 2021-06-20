@@ -3,6 +3,8 @@ import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
 import { AwsCdkServerlessAppStack } from '../lib/aws-cdk-serverless-app-stack';
 
+//Main entry point for the application
+
 const app = new cdk.App();
 new AwsCdkServerlessAppStack(app, 'AwsCdkServerlessAppStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
